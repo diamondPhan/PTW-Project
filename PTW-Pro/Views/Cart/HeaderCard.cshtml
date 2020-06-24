@@ -1,0 +1,5 @@
+﻿@model List<PTW_Pro.Models.Cart>
+    <a href="@Url.Action("Index","Cart")">
+        <img src="~/images/cart.png" />
+        <span style="margin-left:25px;font-size:20px">@Model.Sum(m => m.SoLuong)</span>
+    </a>
